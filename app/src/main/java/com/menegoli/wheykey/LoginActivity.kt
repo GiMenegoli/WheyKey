@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.os.Build
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -24,6 +25,18 @@ class LoginActivity : AppCompatActivity() {
             //this.startActivity(Intent(this, PerfilActivity.class))
             //Intent intent = new Intent(this, PerfilActivity.class)
 
+        }
+
+       fun irParaHome(view: View){
+           val intentHome = Intent(this, PerfilActivity::class.java).apply {
+           }
+           startActivity(intentHome)
+       }
+        fun irParaCadastro(view: View){
+            val intentCad = Intent(this, CadastroActivity::class.java).apply{
+
+            }
+            startActivity(intentCad)
         }
     }
 

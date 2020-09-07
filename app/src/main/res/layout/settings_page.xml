@@ -7,6 +7,31 @@
 
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/relativeDocument"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="513dp">
+
+        <TextView
+            android:id="@+id/textDocument"
+            android:layout_width="71dp"
+            android:layout_height="19dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="CPF/CNPJ" />
+    </RelativeLayout>
+
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="413dp"
@@ -24,6 +49,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alfa_slab_one"
         android:text="Whey Key"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,19 +115,24 @@
 
     <Button
         android:id="@+id/editName"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar"
+        android:textColor="#3863E1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toEndOf="@+id/name"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="130dp" />
 
     <Button
         android:id="@+id/editPicture"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar"
+        android:textColor="#3863E1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,98 +140,138 @@
 
     <TextView
         android:id="@+id/textCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="19dp"
         android:text="Cartão de Crédito/Débito"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.446"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp" />
+        android:gravity="center"
+        tools:layout_editor_absoluteX="29dp" />
 
-
-    <EditText
-        android:id="@+id/editTextNumberCard"
-        android:layout_width="326dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Número Cartão"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="349dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextValidade"
-        android:layout_width="115dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Validade"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberCard" />
-
-    <EditText
-        android:id="@+id/editTextCVV"
-        android:layout_width="115dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CVV"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberCard" />
-
-    <EditText
-        android:id="@+id/editTextNameCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="68dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nome Cartão"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberCard"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextCPFNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CPF/CNPJ"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNameCard"
-        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/ButtonSave"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="208dp"
-            android:text="Salvar"
+        android:layout_marginBottom="232dp"
+        android:text="Salvar"
+        android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextNameCard" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonCancel"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="172dp"
         android:text="Cancelar"
+        android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextCPFNumber" />
+        tools:layout_editor_absoluteX="275dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeNumber"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="343dp" >
+
+        <TextView
+            android:id="@+id/textNumberCard"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="Número Cartão" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeValidade"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="399dp" >
+
+        <TextView
+            android:id="@+id/textValidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Validade" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeCVV"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="399dp" >
+
+        <TextView
+            android:id="@+id/textCVV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="center"
+            android:text="CVV" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNameTitular"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="455dp">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="122dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="Nome do Titular" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

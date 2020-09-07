@@ -54,4 +54,9 @@
         app:layout_constraintVertical_bias="0.211"
         app:srcCompat="@drawable/logo_whey2" />
 
+    <include
+        layout="@layout/bar_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </android.support.constraint.ConstraintLayout>
