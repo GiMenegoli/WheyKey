@@ -1,11 +1,12 @@
-package com.menegoli.wheykey
+package com.menegoli.wheykey.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.menegoli.wheykey.R
 
-class PerfilActivity : AppCompatActivity()  {
+class CheckoutActivity: AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.perfil_page)
+        setContentView(R.layout.checkout_page)
     }
 }

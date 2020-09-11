@@ -1,12 +1,12 @@
-package com.menegoli.wheykey
+package com.menegoli.wheykey.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.menegoli.wheykey.R
 
-class CadastroActivity : AppCompatActivity() {
-
+class PerfilActivity : AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.cadastro_page)
+        setContentView(R.layout.perfil_page)
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,14 +22,15 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="44dp"
             android:layout_marginBottom="32dp"
-            android:text="Search"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:onClick="searchPage"
+            android:text="Search"
+            android:textColor="#3863E1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/home"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="33dp"
@@ -37,25 +38,28 @@
             android:layout_marginBottom="32dp"
             android:layout_toStartOf="@+id/Buy"
             android:layout_toEndOf="@+id/search"
-            android:text="Home"
             android:onClick="homePage"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="Home"
+            android:textColor="#3863E1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/search" />
 
         <Button
             android:id="@+id/Buy"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="27dp"
             android:layout_marginBottom="32dp"
             android:text="Buy"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="#3863E1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toEndOf="@+id/home" />
 
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
