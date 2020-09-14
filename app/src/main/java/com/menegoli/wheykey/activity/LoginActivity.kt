@@ -3,10 +3,12 @@ package com.menegoli.wheykey.activity
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.menegoli.wheykey.R
+import kotlinx.android.synthetic.main.login_page.*
 
 class LoginActivity : AppCompatActivity() {
     @SuppressLint("WrongViewCast")

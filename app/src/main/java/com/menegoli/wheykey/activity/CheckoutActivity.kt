@@ -1,7 +1,8 @@
 package com.menegoli.wheykey.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+
 import com.menegoli.wheykey.R
 
 class CheckoutActivity: AppCompatActivity()  {

@@ -24,12 +24,14 @@
             android:layout_marginBottom="32dp"
             android:onClick="searchPage"
             android:text="Search"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:textColor="#3863E1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/home"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +48,7 @@
 
         <Button
             android:id="@+id/Buy"
-
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
