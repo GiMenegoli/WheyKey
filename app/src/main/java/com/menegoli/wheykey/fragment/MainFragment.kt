@@ -20,16 +20,16 @@ class MainFragment: FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.search_main)
 
-        button.setOnClickListener(){
-           supportFragmentManager.beginTransaction().add(R.id.fragmentlista, ListaFragment(), "Lista").commit()
+        //button.setOnClickListener(){
+          // supportFragmentManager.beginTransaction().add(R.id., ListaFragment(), "Lista").commit()
 
-        }
+       // }
         button2.setOnClickListener(){
-            supportFragmentManager.beginTransaction().add(R.id.mapafragment, MapaFragment(), "Mapa").commit()
+            supportFragmentManager.beginTransaction().add(R.id.map, MapaFragment(), "Mapa").commit()
         }
 
         val fragmentA = ListaFragment()
-        supportFragmentManager.beginTransaction().add(R.id.fragmentlista, fragmentA, "Lista").commit()
+        supportFragmentManager.beginTransaction().add(R.id.map, fragmentA, "Lista").commit()
         val fragmentTrasaction: MapaFragment
     }
 

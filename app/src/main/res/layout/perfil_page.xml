@@ -131,8 +131,10 @@
 
     <include
         layout="@layout/bar_page"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="414dp"
+        android:layout_height="124dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="609dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
