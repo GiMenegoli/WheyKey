@@ -21,6 +21,7 @@ class BarActivity: AppCompatActivity (){
             val searchIntent = Intent(applicationContext, SearchActivity::class.java)
             startActivity(searchIntent)
         }
+
         buttonHome.setOnClickListener {
             val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
             startActivity(homeIntent)
@@ -32,9 +33,8 @@ class BarActivity: AppCompatActivity (){
         }
 
     }
-    private fun manageFragment(fragment: Fragment, tag: String){
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment, tag).commit()
-    }
+
+
 
 }
 

@@ -7,6 +7,231 @@
     android:layout_height="match_parent">
 
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="413dp"
+        android:layout_height="130dp"
+        android:background="@drawable/blue_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Whey Key"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="122dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="484dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.016"
+        app:srcCompat="@drawable/icon"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativename"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textnameCad"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="Nome Completo" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="252dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="3dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeEmail"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textEmailCad"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSenha"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textsenha"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="Senha" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNascimento"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textNascimento"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="Data Nascimento" />
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="263dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="date" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttoncad"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeSenha" />
+
+    <!--
+        <include
+            layout="@layout/bar_page"
+            android:layout_width="414dp"
+            android:layout_height="124dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="-2dp" /> -->
+
+
 
 
 
