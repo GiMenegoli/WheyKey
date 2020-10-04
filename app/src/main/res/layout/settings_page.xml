@@ -11,10 +11,13 @@
         android:id="@+id/relativeDocument"
         android:layout_width="221dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="176dp"
         android:background="@drawable/blue_border_rounded_cornwe"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="513dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textDocument"
@@ -30,6 +33,15 @@
             android:layout_marginBottom="12dp"
             android:gravity="center"
             android:text="CPF/CNPJ" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+
     </RelativeLayout>
 
     <FrameLayout
@@ -62,11 +74,12 @@
         android:layout_height="90dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintVertical_bias="0.016"
         app:srcCompat="@drawable/icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="144dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/name"
@@ -83,48 +96,18 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="32dp"
-        android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/search" />
-
-    <Button
-        android:id="@+id/Buy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Buy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
-        app:layout_constraintStart_toEndOf="@+id/home" />
-
-    <Button
         android:id="@+id/editName"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:text="Editar"
         android:textColor="#3863E1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toEndOf="@+id/name"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/editPicture"
@@ -138,19 +121,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
+
     <TextView
         android:id="@+id/textCard"
         android:layout_width="166dp"
         android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
         android:text="Cartão de Crédito/Débito"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446"
-        tools:ignore="MissingConstraints"
-        android:gravity="center"
-        tools:layout_editor_absoluteX="29dp" />
-
+        app:layout_constraintVertical_bias="0.441"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/ButtonSave"
@@ -162,27 +146,35 @@
         android:text="Salvar"
         android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/relativeNameTitular" />
 
     <Button
         android:id="@+id/buttonCancel"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="176dp"
         android:text="Cancelar"
         android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="275dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toEndOf="@+id/relativeDocument" />
 
     <RelativeLayout
         android:id="@+id/relativeNumber"
         android:layout_width="221dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="344dp"
         android:background="@drawable/blue_border_rounded_cornwe"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="343dp" >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textNumberCard"
@@ -198,6 +190,13 @@
             android:layout_marginBottom="9dp"
             android:gravity="center"
             android:text="Número Cartão" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -205,11 +204,13 @@
         android:layout_width="123dp"
         android:layout_height="40dp"
         android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="399dp" >
+        app:layout_constraintTop_toBottomOf="@+id/relativeNumber"
+        app:layout_constraintVertical_bias="0.039"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textValidade"
@@ -223,18 +224,28 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="Validade" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeCVV"
         android:layout_width="123dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="292dp"
         android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="399dp" >
+        app:layout_constraintTop_toBottomOf="@+id/relativeNumber"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textCVV"
@@ -248,16 +259,26 @@
             android:layout_marginBottom="11dp"
             android:gravity="center"
             android:text="CVV" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeNameTitular"
         android:layout_width="221dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="236dp"
         android:background="@drawable/blue_border_rounded_cornwe"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="455dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textName"
@@ -273,5 +294,23 @@
             android:layout_marginBottom="13dp"
             android:gravity="center"
             android:text="Nome do Titular" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
     </RelativeLayout>
+
+    <include
+        layout="@layout/bar_page"
+        android:layout_width="414dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-2dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

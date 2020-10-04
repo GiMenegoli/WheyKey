@@ -55,9 +55,6 @@ class MapaFragment: Fragment() {
         }
 
 
-        val machineName = rootView.findViewById<AppCompatTextView>(R.id.machineName)
-        machineName.text = machine.machineName
-
         mapFragment?.let {
             childFragmentManager.beginTransaction().replace(R.id.map, it).commit();
         }

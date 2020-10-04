@@ -24,7 +24,7 @@ class MapaActivity : AppCompatActivity(), OnMapReadyCallback {
             supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment!!.getMapAsync(this)
 
-        machineName.text = machine.machineName
+
     }
 
     override fun onMapReady(map: GoogleMap?) {

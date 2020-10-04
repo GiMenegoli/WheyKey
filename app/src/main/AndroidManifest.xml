@@ -14,13 +14,24 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".activity.PerfilActivity">
+        <activity android:name=".activity.BarActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.PerfilActivity"></activity>
+        <activity android:name=".activity.CadastroActivity"></activity>
+        <activity android:name=".activity.CheckoutActivity"></activity>
+        <activity android:name=".activity.CheckoutFinishActivity"></activity>
+        <activity android:name=".activity.CheckoutSelectActivity"></activity>
+        <activity android:name=".activity.SearchActivity"></activity>
+        <activity android:name=".activity.MapaActivity"></activity>
+        <activity android:name=".activity.SettingsActivity"></activity>
+
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

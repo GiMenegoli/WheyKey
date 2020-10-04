@@ -34,37 +34,51 @@
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
-        android:layout_width="414dp"
-        android:layout_height="471dp"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="259dp"
-        tools:ignore="MissingConstraints">
+        android:layout_width="415dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.723"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
 
     </FrameLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonMapa"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="112dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="160dp"
         android:text="Mapa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toEndOf="@+id/buttonLista"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLista"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginTop="156dp"
         android:text="Lista"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        tools:ignore="MissingConstraints" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bar_page"
+        android:layout_width="414dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
