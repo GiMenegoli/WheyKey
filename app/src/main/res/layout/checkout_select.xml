@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="Checkout"
+        android:text="WheyKey"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
@@ -46,20 +46,22 @@
         android:layout_height="118dp"
         android:layout_marginStart="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageCopo"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352"
+        app:layout_constraintVertical_bias="0.35"
         app:srcCompat="@drawable/blue_border_rounded_cornwe" />
 
     <ImageView
         android:id="@+id/imageCopo"
         android:layout_width="127dp"
         android:layout_height="117dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toEndOf="@+id/imageSabor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351"
         app:srcCompat="@drawable/blue_border_rounded_cornwe"
         tools:ignore="MissingConstraints" />
 
@@ -69,7 +71,6 @@
         android:layout_height="122dp"
         app:layout_constraintBottom_toBottomOf="@+id/include2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/frameLayout"
         app:layout_constraintVertical_bias="0.602"
@@ -81,14 +82,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tudo Pronto"
         android:onClick="tudoPronto"
+        android:text="Tudo Pronto"
         android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageComplemento"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.242" />
 
     <TextView
         android:id="@+id/textView"
@@ -124,4 +125,38 @@
         app:layout_constraintStart_toStartOf="@+id/imageComplemento"
         app:layout_constraintTop_toTopOf="@+id/imageComplemento"
         app:layout_constraintVertical_bias="0.126" />
+
+    <Spinner
+        android:id="@+id/spinnerSabor"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSabor"
+        app:layout_constraintEnd_toEndOf="@+id/imageSabor"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="@+id/imageSabor"
+        app:layout_constraintTop_toTopOf="@+id/imageSabor"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <Spinner
+        android:id="@+id/spinnerCopo"
+        android:layout_width="91dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCopo"
+        app:layout_constraintEnd_toEndOf="@+id/imageCopo"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/imageCopo"
+        app:layout_constraintTop_toTopOf="@+id/imageCopo"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Spinner
+        android:id="@+id/spinnerComlemento"
+        android:layout_width="91dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageComplemento"
+        app:layout_constraintEnd_toEndOf="@+id/imageComplemento"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/imageComplemento"
+        app:layout_constraintTop_toTopOf="@+id/imageComplemento"
+        app:layout_constraintVertical_bias="0.636" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.menegoli.wheykey.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
 import com.menegoli.wheykey.R
@@ -17,5 +18,7 @@ class CheckoutSelectActivity : AppCompatActivity()  {
             val goNfcIntent = Intent(applicationContext, CheckoutActivity ::class.java)
             startActivity(goNfcIntent)
         }
+
+
     }
 }

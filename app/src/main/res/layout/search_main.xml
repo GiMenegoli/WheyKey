@@ -47,12 +47,12 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonMapa"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="112dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="156dp"
         android:text="Mapa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toEndOf="@+id/buttonLista"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />

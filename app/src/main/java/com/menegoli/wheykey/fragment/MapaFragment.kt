@@ -17,8 +17,8 @@ import com.menegoli.wheykey.model.Machine
 
 class MapaFragment: Fragment() {
 
-    val machine = Machine(-22.9722666, -46.9902287, "Machine 1")
-    val machine2 = Machine(-22.9730409, -46.9987857, "Machine 2")
+    val machine = Machine(-23.574570, -46.623360, "Machine 1")
+    val machine2 = Machine(-23.584587, -46.637350, "Machine 2")
 
 
     private var mapFragment: SupportMapFragment? = null
