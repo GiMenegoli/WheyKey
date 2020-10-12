@@ -62,21 +62,41 @@
 
         <RadioButton
             android:id="@+id/radioButtonDoseUnica"
-            android:layout_width="match_parent"
+            android:layout_width="113dp"
             android:layout_height="wrap_content"
-            android:text="Dose única"/>
+            android:text="Dose única" />
 
         <RadioButton
             android:id="@+id/radioButtonMensal"
-            android:layout_width="match_parent"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Mensal"/>
+            android:text="Mensal" />
 
         <RadioButton
             android:id="@+id/radioButtonAnual"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="Semestral" />
+
+        <TextView
+            android:id="@+id/textViewUnica"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="1"
+            tools:layout_editor_absoluteX="-62dp"
+            tools:layout_editor_absoluteY="442dp" />
+
+        <TextView
+            android:id="@+id/textViewAnual"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Semestral"/>
+            android:text="150" />
+
+        <TextView
+            android:id="@+id/textViewMensal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22" />
     </RadioGroup>
 
     <TextView

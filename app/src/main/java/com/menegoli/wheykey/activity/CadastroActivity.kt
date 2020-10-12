@@ -56,8 +56,11 @@ class CadastroActivity : AppCompatActivity() {
         if(requestCode == 0 && resultCode == Activity.RESULT_OK && data != null){
             selectedPhotoUri = data.data
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
-            val bitmapDrawable = BitmapDrawable(bitmap)
-            selectphoto_button.setBackgroundDrawable(bitmapDrawable)
+
+            foto_resgister.setImageBitmap(bitmap)
+            selectphoto_button.alpha = 0f
+            //val bitmapDrawable = BitmapDrawable(bitmap)
+            //selectphoto_button.setBackgroundDrawable(bitmapDrawable)
         }
     }
 

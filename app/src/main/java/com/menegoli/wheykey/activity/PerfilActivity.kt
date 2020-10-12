@@ -2,8 +2,10 @@ package com.menegoli.wheykey.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 import com.menegoli.wheykey.R
 import kotlinx.android.synthetic.main.bar_page.*
@@ -21,6 +23,10 @@ class PerfilActivity : AppCompatActivity()  {
         val result = intent.getStringExtra("BuyKey")
         val textPlan = findViewById<TextView>(R.id.textPlan)
         textPlan.text = result
+
+        val cont = intent.getStringExtra("ContadorDose")
+        val qtdDoses = findViewById<TextView>(R.id.qtdDoses)
+        qtdDoses.text = cont
 
 
         buttonHome.setOnClickListener {
@@ -45,6 +51,11 @@ class PerfilActivity : AppCompatActivity()  {
             startActivity(checkoutIntent)
         }
 
-
+        imageButtonLog.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            val logIntent = Intent(applicationContext, LoginActivity::class.java)
+            startActivity(logIntent)
+        }
     }
+
 }
