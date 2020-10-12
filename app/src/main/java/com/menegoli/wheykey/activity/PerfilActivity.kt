@@ -18,6 +18,19 @@ class PerfilActivity : AppCompatActivity()  {
         setContentView(R.layout.perfil_page)
 
 
+        buttonHome.setOnClickListener {
+            val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
+            startActivity(homeIntent)
+        }
+        buttonSearch.setOnClickListener {
+            val searchIntent = Intent(applicationContext, SearchActivity::class.java)
+            startActivity(searchIntent)
+        }
+        buttonBuy.setOnClickListener {
+            val buyIntent = Intent(applicationContext, CheckoutSelectActivity::class.java)
+            startActivity(buyIntent)
+
+        }
 
 
         buttonConfig.setOnClickListener {

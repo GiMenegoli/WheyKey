@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.menegoli.wheykey.R
 import com.menegoli.wheykey.fragment.ListaFragment
 import com.menegoli.wheykey.fragment.MapaFragment
+import kotlinx.android.synthetic.main.bar_page.*
 import kotlinx.android.synthetic.main.search_main.*
 
 class SearchActivity: AppCompatActivity() {
@@ -19,6 +20,19 @@ class SearchActivity: AppCompatActivity() {
         setContentView(R.layout.search_main)
 
 
+        buttonHome.setOnClickListener {
+            val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
+            startActivity(homeIntent)
+        }
+        buttonSearch.setOnClickListener {
+            val searchIntent = Intent(applicationContext, SearchActivity::class.java)
+            startActivity(searchIntent)
+        }
+        buttonBuy.setOnClickListener {
+            val buyIntent = Intent(applicationContext, CheckoutSelectActivity::class.java)
+            startActivity(buyIntent)
+
+        }
         buttonLista.setOnClickListener {
             manageFragment(ListaFragment(), "Lista")
         }

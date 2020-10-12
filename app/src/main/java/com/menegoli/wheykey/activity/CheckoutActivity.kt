@@ -13,6 +13,19 @@ class CheckoutActivity: AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.checkout_page)
 
+        buttonHome.setOnClickListener {
+            val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
+            startActivity(homeIntent)
+        }
+        buttonSearch.setOnClickListener {
+            val searchIntent = Intent(applicationContext, SearchActivity::class.java)
+            startActivity(searchIntent)
+        }
+        buttonBuy.setOnClickListener {
+            val buyIntent = Intent(applicationContext, CheckoutSelectActivity::class.java)
+            startActivity(buyIntent)
+
+        }
         buttonCheckout.setOnClickListener {
             val checkoutIntent = Intent(applicationContext, CheckoutFinishActivity::class.java)
             startActivity(checkoutIntent)

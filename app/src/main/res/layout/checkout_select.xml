@@ -126,37 +126,76 @@
         app:layout_constraintTop_toTopOf="@+id/imageComplemento"
         app:layout_constraintVertical_bias="0.126" />
 
-    <Spinner
-        android:id="@+id/spinnerSabor"
-        android:layout_width="96dp"
-        android:layout_height="24dp"
+    <RadioGroup
+        android:id="@+id/groupSabor"
+        android:layout_width="110dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageSabor"
         app:layout_constraintEnd_toEndOf="@+id/imageSabor"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="@+id/imageSabor"
         app:layout_constraintTop_toTopOf="@+id/imageSabor"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.857">
 
-    <Spinner
-        android:id="@+id/spinnerCopo"
-        android:layout_width="91dp"
-        android:layout_height="24dp"
+        <RadioButton
+            android:id="@+id/radioButtonChocolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chocolate" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBaunilha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baunilha" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupCopo"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageCopo"
         app:layout_constraintEnd_toEndOf="@+id/imageCopo"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="@+id/imageCopo"
         app:layout_constraintTop_toTopOf="@+id/imageCopo"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.719">
 
-    <Spinner
-        android:id="@+id/spinnerComlemento"
-        android:layout_width="91dp"
-        android:layout_height="23dp"
+        <RadioButton
+            android:id="@+id/radioButtonSim"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sim" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNão"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupComplemento"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageComplemento"
         app:layout_constraintEnd_toEndOf="@+id/imageComplemento"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="@+id/imageComplemento"
         app:layout_constraintTop_toTopOf="@+id/imageComplemento"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.785">
+
+        <RadioButton
+            android:id="@+id/radioButtonAgua"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Água" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLeite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leite" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

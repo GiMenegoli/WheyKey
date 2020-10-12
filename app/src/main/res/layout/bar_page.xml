@@ -26,6 +26,7 @@
             android:layout_marginEnd="42dp"
             android:layout_marginBottom="28dp"
             android:background="@null"
+            android:onClick="comprar"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/button_buy" />
 
@@ -38,7 +39,7 @@
             android:layout_marginBottom="28dp"
             android:layout_toStartOf="@+id/buttonBuy"
             android:background="@null"
-            android:onClick="buttonHome"
+            android:onClick="perfil"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/profile" />
 
@@ -53,7 +54,7 @@
             android:layout_marginBottom="28dp"
             android:layout_toStartOf="@+id/buttonHome"
             android:background="@null"
-            android:onClick="buttonSearch"
+            android:onClick="encontrar"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/procurar" />
 

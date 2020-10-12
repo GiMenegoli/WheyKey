@@ -2,6 +2,7 @@ package com.menegoli.wheykey.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -17,24 +18,22 @@ class BarActivity: AppCompatActivity (){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bar_page)
 
-        buttonSearch.setOnClickListener{
-            val searchIntent = Intent(applicationContext, SearchActivity::class.java)
-            startActivity(searchIntent)
-        }
 
         buttonHome.setOnClickListener {
             val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
             startActivity(homeIntent)
         }
-
+        buttonSearch.setOnClickListener {
+            val searchIntent = Intent(applicationContext, SearchActivity::class.java)
+            startActivity(searchIntent)
+        }
         buttonBuy.setOnClickListener {
             val buyIntent = Intent(applicationContext, CheckoutSelectActivity::class.java)
             startActivity(buyIntent)
+
         }
 
     }
-
-
 
 }
 
