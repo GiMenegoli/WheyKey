@@ -61,15 +61,14 @@
         android:id="@+id/textPlano"
         android:layout_width="44dp"
         android:layout_height="20dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
         android:text="Plano"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.225"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -92,6 +91,7 @@
         android:gravity="center"
         android:text="Doses Disponíveis"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.188"
@@ -120,17 +120,17 @@
 
     <TextView
         android:id="@+id/textPlan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
-        android:text="Básico I"
+
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.619" />
 
     <TextView
         android:id="@+id/qtdDoses"
@@ -164,6 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="184dp"
+        android:textColor="#3863E1"
         android:text="Compre Mais"
         app:layout_constraintBottom_toBottomOf="@+id/include3"
         app:layout_constraintEnd_toEndOf="parent"

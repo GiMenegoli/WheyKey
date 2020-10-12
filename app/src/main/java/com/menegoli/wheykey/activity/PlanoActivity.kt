@@ -3,16 +3,15 @@ package com.menegoli.wheykey.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-
 import com.menegoli.wheykey.R
 import kotlinx.android.synthetic.main.bar_page.*
-import kotlinx.android.synthetic.main.checkout_page.*
-import kotlinx.android.synthetic.main.perfil_page.*
+import kotlinx.android.synthetic.main.planos_page.*
 
-class CheckoutActivity: AppCompatActivity()  {
+class PlanoActivity: AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.checkout_page)
+        setContentView(R.layout.planos_page)
 
         buttonHome.setOnClickListener {
             val homeIntent = Intent(applicationContext, PerfilActivity::class.java)
@@ -25,18 +24,12 @@ class CheckoutActivity: AppCompatActivity()  {
         buttonBuy.setOnClickListener {
             val buyIntent = Intent(applicationContext, CheckoutSelectActivity::class.java)
             startActivity(buyIntent)
-
         }
-        buttonCheckout.setOnClickListener {
 
-            val checkoutIntent = Intent(applicationContext, CheckoutFinishActivity::class.java)
-            startActivity(checkoutIntent)
-
+        buttonContinuar.setOnClickListener{
+            val continuarIntent = Intent(applicationContext, AdquirirActivity::class.java)
+            startActivity(continuarIntent)
         }
-    //Pegar dados do radio da outra activity
-        textPlan
-
+    }
 
     }
-}
-

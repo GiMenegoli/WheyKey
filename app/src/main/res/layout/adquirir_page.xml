@@ -64,26 +64,26 @@
             android:id="@+id/radioButtonDoseUnica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dose única - R$5,00"/>
+            android:text="Dose única"/>
 
         <RadioButton
             android:id="@+id/radioButtonMensal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Plano Mensal - 22 doses - R$90,00"/>
+            android:text="Mensal"/>
 
         <RadioButton
             android:id="@+id/radioButtonAnual"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Plano Semestral - 150 doses - R$520,00"/>
+            android:text="Semestral"/>
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="Selecione a opção desejada"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,11 +95,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Comprar"
+        android:textColor="#3863E1"
         app:layout_constraintBottom_toBottomOf="@+id/include2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageMudarPlano"
         app:layout_constraintVertical_bias="0.277" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
