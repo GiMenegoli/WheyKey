@@ -51,4 +51,3 @@ class SettingsActivity : AppCompatActivity() {
         }
 }
 
-class CardUser(val uid:String,val numberCard: String, val validate: String, val codValidate: String, val nameCard: String, val documentCard: String)

@@ -27,6 +27,7 @@ class CheckoutActivity: AppCompatActivity()  {
 
         }
         buttonCheckout.setOnClickListener {
+
             val checkoutIntent = Intent(applicationContext, CheckoutFinishActivity::class.java)
             startActivity(checkoutIntent)
         }
