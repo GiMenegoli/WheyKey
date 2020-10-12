@@ -31,20 +31,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="122dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="484dp"
+
+
+
+    <TextView
+        android:fontFamily="@font/alfa_slab_one"
+        android:id="@+id/textnameCad"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Nome Completo"
+        app:layout_constraintBottom_toTopOf="@+id/relativename"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.016"
-        app:srcCompat="@drawable/icon"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:id="@+id/relativename"
@@ -58,20 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textnameCad"
-            android:layout_width="112dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="57dp"
-            android:layout_marginBottom="9dp"
-            android:gravity="center"
-            android:text="Nome Completo" />
+
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -87,11 +79,28 @@
             android:inputType="textPersonName" />
     </RelativeLayout>
 
+
+    <TextView
+        android:id="@+id/textEmailCad"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="E-mail"
+        android:fontFamily="@font/alfa_slab_one"
+        app:layout_constraintBottom_toTopOf="@+id/relativeEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <RelativeLayout
         android:id="@+id/relativeEmail"
         android:layout_width="296dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="292dp"
         android:background="@drawable/blue_border_rounded_cornwe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,20 +108,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textEmailCad"
-            android:layout_width="112dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="57dp"
-            android:layout_marginBottom="9dp"
-            android:gravity="center"
-            android:text="E-mail" />
+
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
@@ -130,11 +126,27 @@
             android:inputType="textEmailAddress" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/textsenha"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Senha"
+        android:fontFamily="@font/alfa_slab_one"
+        app:layout_constraintBottom_toTopOf="@+id/relativeSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <RelativeLayout
         android:id="@+id/relativeSenha"
         android:layout_width="296dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="204dp"
         android:background="@drawable/blue_border_rounded_cornwe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,20 +154,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textsenha"
-            android:layout_width="112dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="57dp"
-            android:layout_marginBottom="9dp"
-            android:gravity="center"
-            android:text="Senha" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -169,47 +167,6 @@
             android:inputType="textPassword" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeNascimento"
-        android:layout_width="296dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="312dp"
-        android:background="@drawable/blue_border_rounded_cornwe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/textNascimento"
-            android:layout_width="112dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="57dp"
-            android:layout_marginBottom="9dp"
-            android:gravity="center"
-            android:text="Data Nascimento" />
-
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="263dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="22dp"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="5dp"
-            android:ems="10"
-            android:inputType="date" />
-    </RelativeLayout>
-
     <Button
         android:id="@+id/buttoncad"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
@@ -220,6 +177,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeSenha" />
+
+    <ImageButton
+        android:id="@+id/selectphoto_button"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="152dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
 
     <!--
         <include

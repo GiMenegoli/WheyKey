@@ -38,18 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356"
-        app:srcCompat="@drawable/blue_border_rounded_cornwe" />
-
-    <ImageView
-        android:id="@+id/imagePlanoIndividual"
-        android:layout_width="357dp"
-        android:layout_height="122dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMudarPlano"
-        app:layout_constraintVertical_bias="0.303"
+        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/blue_border_rounded_cornwe" />
 
     <include
@@ -61,5 +50,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/frameLayout"
         app:layout_constraintVertical_bias="0.998" />
+
+    <RadioGroup
+        android:layout_width="320dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMudarPlano"
+        app:layout_constraintEnd_toEndOf="@+id/imageMudarPlano"
+        app:layout_constraintStart_toStartOf="@+id/imageMudarPlano"
+        app:layout_constraintTop_toTopOf="@+id/imageMudarPlano">
+
+        <RadioButton
+            android:id="@+id/radioButtonDoseUnica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dose única - R$5,00" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMensal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plano Mensal - 22 doses - R$90,00" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAnual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plano Semestral - 150 doses - R$520,00" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Selecione a opção desejada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConfirmar"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMudarPlano"
+        app:layout_constraintVertical_bias="0.277" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

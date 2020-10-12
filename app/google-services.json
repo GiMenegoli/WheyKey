@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "915849977712",
+    "firebase_url": "https://wheykey-125ee.firebaseio.com",
+    "project_id": "wheykey-125ee",
+    "storage_bucket": "wheykey-125ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915849977712:android:9525edbdc3cd615e0939b5",
+        "android_client_info": {
+          "package_name": "com.menegoli.wheykey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915849977712-tre95n8iqd997bdnq7vs4aeitbt9oisf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz4PulW0vTqoEPWCnq5lyrdfURrf35j8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915849977712-tre95n8iqd997bdnq7vs4aeitbt9oisf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

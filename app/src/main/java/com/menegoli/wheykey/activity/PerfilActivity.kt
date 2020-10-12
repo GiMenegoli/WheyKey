@@ -10,9 +10,14 @@ import kotlinx.android.synthetic.main.checkout_page.*
 import kotlinx.android.synthetic.main.perfil_page.*
 
 class PerfilActivity : AppCompatActivity()  {
+
+    var count = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.perfil_page)
+
+
 
 
         buttonConfig.setOnClickListener {
