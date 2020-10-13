@@ -18,7 +18,7 @@
         android:layout_alignParentBottom="true"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
-        android:text="CPF/CNPJ"
+        android:text="CPF"
         app:layout_constraintBottom_toTopOf="@+id/relativeDocument"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
@@ -72,44 +72,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/selectphoto_button"
-        android:layout_width="103dp"
-        android:layout_height="70dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.016"
-        app:srcCompat="@drawable/icon"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="Nome"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="152dp"
+        android:background="@null"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
 
-    <Button
-        android:id="@+id/editPicture"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Editar"
-        android:textColor="#3863E1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectphoto_button" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_resgister"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectphoto_button"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/selectphoto_button"
+        app:layout_constraintTop_toTopOf="@+id/selectphoto_button" />
 
 
     <TextView

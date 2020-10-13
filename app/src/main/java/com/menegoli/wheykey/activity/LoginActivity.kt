@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
 
                     }
                 .addOnFailureListener {
-                    Toast.makeText(this,"Usuário e senha Inválido", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"Usuário e/ou senha incorretos", Toast.LENGTH_SHORT).show()
                 }
                 }
 

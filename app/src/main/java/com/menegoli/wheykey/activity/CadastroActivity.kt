@@ -42,6 +42,8 @@ class CadastroActivity : AppCompatActivity() {
                   if(it.isSuccessful){
                       uploadImageToFirebaseStorage()
                       Toast.makeText(this,"Usuário Cadastrado", Toast.LENGTH_SHORT).show()
+                      val entrarIntent = Intent(applicationContext, PerfilActivity::class.java)
+                      startActivity(entrarIntent)
                       return@addOnCompleteListener
                   }
                }
