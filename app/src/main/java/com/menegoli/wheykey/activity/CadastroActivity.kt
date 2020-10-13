@@ -86,6 +86,7 @@ class CadastroActivity : AppCompatActivity() {
         val user = User(uid, editTextTextPersonName.text.toString(),profileImageUrl)
         ref.setValue(user)
             .addOnSuccessListener{
+
         }
     }
 }

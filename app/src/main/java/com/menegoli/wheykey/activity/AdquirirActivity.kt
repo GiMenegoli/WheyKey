@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.perfil_page.*
 
 class AdquirirActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.adquirir_page)
@@ -26,6 +27,7 @@ class AdquirirActivity : AppCompatActivity() {
         val radioButtonMensal = findViewById<RadioButton>(R.id.radioButtonMensal)
         val radioButtonAnual = findViewById<RadioButton>(R.id.radioButtonAnual)
         val buttonConfirmar = findViewById<Button>(R.id.buttonConfirmar)
+
 
 
         buttonHome.setOnClickListener {
@@ -51,11 +53,13 @@ class AdquirirActivity : AppCompatActivity() {
             }
         })
 
+
         buttonConfirmar.setOnClickListener(){
         var id: Int = radioGroup.checkedRadioButtonId
 
             if (id!= -1){
                 val radio: RadioButton = findViewById(radioGroup.checkedRadioButtonId)
+
                 val select = "${radio.text}"
                 Toast.makeText(applicationContext,"${radio.text} contratado com sucesso!",
                     Toast.LENGTH_LONG).show()
@@ -69,9 +73,12 @@ class AdquirirActivity : AppCompatActivity() {
                 Toast.makeText(this, "Selecione uma opção", Toast.LENGTH_LONG).show()
             }
         }
+
+    }
+
+
+
     }
 
 
-
-    }
 
